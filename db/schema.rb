@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170705095122) do
+ActiveRecord::Schema.define(version: 20170709110847) do
 
   create_table "static_pages", force: :cascade do |t|
     t.string "home"
