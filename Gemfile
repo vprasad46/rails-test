@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '3.3.7'
 gem 'redis', '~> 3.0'
 gem 'bcrypt', '~> 3.1.7'
-
+gem 'jquery-rails'
 gem 'capistrano-rails', group: :development
 
 group :development, :test do
