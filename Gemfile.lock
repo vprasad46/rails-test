@@ -47,6 +47,7 @@ GEM
     autoprefixer-rails (7.1.2)
       execjs
     bcrypt (3.1.11)
+    bcrypt (3.1.11-x86-mingw32)
     bindex (0.5.0)
     binding.repl (3.0.0)
     bootstrap-sass (3.3.7)
@@ -95,10 +96,13 @@ GEM
     every_day_irb (2.0.0)
       cd (~> 1.0)
     execjs (2.7.0)
+    faker (1.7.3)
+      i18n (~> 0.5)
     fancy_irb (1.1.0)
       paint (>= 0.9, < 3.0)
       unicode-display_width (~> 1.1)
     ffi (1.9.18)
+    ffi (1.9.18-x86-mingw32)
     formatador (0.2.5)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
@@ -177,6 +181,8 @@ GEM
     net-ssh (4.1.0)
     nio4r (2.1.0)
     nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.0-x86-mingw32)
       mini_portile2 (~> 2.2.0)
     notiffany (0.1.1)
       nenv (~> 0.1)
@@ -259,6 +265,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.3.13)
+    sqlite3 (1.3.13-x86-mingw32)
     sshkit (1.14.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
@@ -273,9 +280,12 @@ GEM
     turbolinks-source (5.0.3)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2017.2)
+      tzinfo (>= 1.0.0)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.2.1)
+    wdm (0.1.1)
     web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -291,6 +301,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -299,6 +310,7 @@ DEPENDENCIES
   capistrano-rails
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  faker (= 1.7.3)
   guard (= 2.13.0)
   guard-minitest (= 2.4.4)
   irbtools
@@ -319,6 +331,7 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
+  wdm (>= 0.1.0)
   web-console (>= 3.3.0)
 
 BUNDLED WITH
