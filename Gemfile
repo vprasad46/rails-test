@@ -31,6 +31,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 gem 'jquery-rails'
 gem 'faker',          '1.7.3'
+gem 'carrierwave',             '1.1.0'
+gem 'mini_magick',             '4.7.0'
+gem 'fog',                     '1.40.0'
 gem 'capistrano-rails', group: :development
 
 group :development, :test do

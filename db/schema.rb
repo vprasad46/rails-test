@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170713170451) do
+ActiveRecord::Schema.define(version: 20170715150730) do
+
+  create_table "microposts", force: :cascade do |t|
+    t.text "content"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "picture"
+    t.index ["user_id", "created_at"], name: "index_microposts_on_user_id_and_created_at"
+    t.index ["user_id"], name: "index_microposts_on_user_id"
+  end
 
   create_table "static_pages", force: :cascade do |t|
     t.string "home"
@@ -28,7 +38,7 @@ ActiveRecord::Schema.define(version: 20170713170451) do
     t.string "remember_digest"
     t.boolean "admin"
     t.string "activation_digest"
-    t.boolean "activated", default: false
+    t.boolean "activated"
     t.datetime "activated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
